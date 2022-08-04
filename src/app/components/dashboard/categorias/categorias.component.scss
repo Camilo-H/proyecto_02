@@ -1,48 +1,3 @@
-/*
-.demo-table {
-  //width: 100%;
-}
-
-.mat-row .mat-cell {
-  /*
-  border-bottom: 1px solid transparent;
-  border-top: 1px solid transparent;
-  cursor: pointer;
-  
-}
-th {
-  width: 20%;
-}
-.mat-row:hover .mat-cell {
-  border-color: currentColor;
-}
-.example-table-container {
-  position: relative;
-  min-height: 200px;
-  max-height: 500px;
-  width: 100%;
-  height: 400px;
-  //overflow: auto;
-}
-
-.demo-row-is-clicked {
-  //font-weight: bold;
-}
-
-.example-spacer {
-  flex: 1 1 auto;
-}
-
-table {
-  width: 100%;
-  height: 100px;
-}
-
-.mat-form-field {
-  // font-size: 14px;
-  //width: 100%;
-}
-*/
 td,
 th {
   width: 25%;
@@ -92,4 +47,28 @@ td.mat-column-position {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.btnAgrear{
+  background-color: rgb(15, 32, 65);
+  color: #fff;
+}
+.btnEdita{
+  background-color: rgb(15, 32, 65);
+  color: #fff;
+}
+.btnEliminar{
+  background: rgb(175, 0, 0);
+  color: #fff;
+}
+.btnVolver{
+  background: rgb(175, 0, 0);
+  color: #fff;
+}
+.btnElimminarFoto{
+  background: rgb(175, 0, 0);
+  color: #fff;
+}
+.text{
+  background-color: rgb(15, 32, 65);
+  color: #fff;
 }

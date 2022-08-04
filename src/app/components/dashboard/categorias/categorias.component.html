@@ -1,5 +1,5 @@
 <div class="container">
-    <mat-toolbar color="primary">
+    <mat-toolbar class="text">
         <span>GESTION DE CATEGORIAS</span>
     <span class="example-spacer"></span>
     </mat-toolbar>
@@ -14,7 +14,7 @@
             </mat-grid-tile>
 
             <mat-grid-tile [colspan]="1" [rowspan]="1" [style.background]="''">
-                <h2 class="text-danger">INFORMACION CATEGORIA</h2>
+                <h2 class="text-darck">INFORMACION CATEGORIA</h2>
             </mat-grid-tile>
 
             <mat-grid-tile [colspan]="3" [rowspan]="5" [style.background]="''">
@@ -70,7 +70,7 @@
                 </mat-grid-tile>
                 <mat-grid-tile [colspan]="1" [rowspan]="1" [style.background]="'lightgreen2'">
                     <input #imagen style="color: transparent;" class="btn" type="file" (change)="onFileChanged($event)">
-                    <input type="button" (click)="onImageDefault()" class="btn btn-warning" value="Eliminar Foto">
+                    <input type="button" (click)="onImageDefault()" class="btnElimminarFoto" value="Eliminar Foto">
                 </mat-grid-tile>
             </form>
 
@@ -97,19 +97,19 @@
         </mat-grid-list>
         <br>
         <div class="example-button-row" style="text-align: right;">
-            <button class="btn btn-primary mx-2" type="submit" (click)="crear()" mat-raised-button
+            <button class="btnAgrear  mx-2" type="submit" (click)="crear()" mat-raised-button
                 [disabled]="!statusAgregar"> Agregar
                 <mat-icon>check_circle_outline</mat-icon>
             </button>
-            <button class="btn btn-primary mx-2" type="submit" (click)="actualizar()" mat-raised-button
+            <button class="btnEditar mx-2" type="submit" (click)="actualizar()" mat-raised-button
                 [disabled]="!statusEditar"> Editar
                 <mat-icon>check_circle_outline</mat-icon>
             </button>
-            <button class="btn btn-primary mx-2" type="submit" (click)="eliminar()" mat-raised-button
+            <button class="btnEliminar mx-2" type="submit" (click)="eliminar()" mat-raised-button
                 [disabled]="!statusEliminar"> Eliminar
                 <mat-icon>check_circle_outline</mat-icon>
             </button>
-            <button routerLink="/dashboard/escenario" class="btn btn-danger mx-5" mat-raised-button> Volver
+            <button routerLink="/dashboard/escenario" class="btnVolver mx-5" mat-raised-button> Volver
                 <mat-icon>highlight_off</mat-icon>
             </button>
         </div>
