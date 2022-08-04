@@ -1,13 +1,13 @@
 <div class="container my-5">
-  <h1 class="h1 text-primary text-center">
+  <h1 class="h1 text-primary text-center text-black font-weight ">
     {{titulo}}: {{dato}}
   </h1>
   <div class="row">
     <div *ngIf="login.rol=='admin'" class="col-md-12 col-lg-12 my-3">
       <section class="example-section">
         <mat-radio-group (change)="onSelectionReservacion()" [(ngModel)]="estado_horario">
-          <mat-radio-button class="example-margin" value="0" class="mx-1">HORARIO FIJO</mat-radio-button>
-          <mat-radio-button class="example-margin" value="1" class="mx-1">RESERVACION</mat-radio-button>
+          <mat-radio-button class="example-margin " value="0" class="mx-1">HORARIO FIJO</mat-radio-button>
+          <mat-radio-button class="example-margin  " value="1" class="mx-1">RESERVACION</mat-radio-button>
         </mat-radio-group>
       </section>
     </div>
@@ -29,7 +29,7 @@
           </mat-form-field>
         </div>
         <div class="col-md-6 col-xl-6 my-2">
-          <button class="btn btn-primary">
+          <button class="btn btnBuscarEstudiante font-weight-normal ">
             buscar estudiante
           </button>
         </div>
@@ -94,7 +94,7 @@
     </div>
 
     <div class="col-md-10 col-xl-12 text-center my-2">
-      <button [disabled]="!mostrarButton" class="btn btn-primary" (click)="registrarH_R()">Agregar</button>
+      <button [disabled]="!mostrarButton" class="btnAgregar font-weight-normal text-center rounded" (click)="registrarH_R()">Agregar</button>
     </div>
   </div>
   <div class="row">
