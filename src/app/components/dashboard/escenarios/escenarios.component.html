@@ -4,7 +4,7 @@
         <span class="example-spacer"></span>
         <button mat-raised-button class="btnGestCategoria" routerLink="/dashboard/categoria">Gestionar Categorias</button>
         <span class="mx-2"></span>
-        <button mat-raised-button color="" (click)="crearEscenario()">Agregar Nuevo Escenario</button>
+        <button mat-raised-button class="btnGestEscenario" (click)="crearEscenario()">Agregar Nuevo Escenario</button>
     </mat-toolbar>
     <div>Time: {{ time | async }}</div>
     <mat-form-field appearance="standard">
